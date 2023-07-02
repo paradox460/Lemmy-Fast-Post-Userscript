@@ -1,8 +1,16 @@
 const keydownHandler = ({ target, key, metaKey, ctrlKey }) => {
   if (key === 'Enter' && (metaKey || ctrlKey)) {
-    target.removeEventListener('keydown', keydownHandler)
+    const parentForm = target.closest('.markdown-textarea');
+
+    target.removeEventListener('keydown', keydownHandler);
+
+    if (GM_getValue('language')) {
+      const languageSelect = parentForm.querySelector(".form-select[id^=language-select]");
+      ([...languageSelect.options]).find(({ value }) => value === GM_getValue('language')).selected = true;
+      languageSelect.dispatchEvent(new Event('change'));
+    }
     // Click submit to trigger the `submit` form event, as `submit` doesn't
-    target.closest('.markdown-textarea').querySelector('button[type=submit]').click()
+    parentForm.querySelector('button[type=submit]').click();
   }
 }
 

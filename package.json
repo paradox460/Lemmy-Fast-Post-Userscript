@@ -1,6 +1,6 @@
 {
   "name": "lemmy-fast-post",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Small userscript that lets you submit a lemmy post by hitting ctrl/cmd+enter in the ",
   "license": "MIT",
   "devDependencies": {
