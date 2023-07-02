@@ -1,0 +1,12 @@
+{
+  "name": "lemmy-fast-post",
+  "version": "0.0.1",
+  "description": "Small userscript that lets you submit a lemmy post by hitting ctrl/cmd+enter in the ",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.18.11"
+  },
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}
