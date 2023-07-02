@@ -6,7 +6,7 @@ Allows you to command/ctrl + enter within the text area to submit a comment. Tha
 
 You'll need a UserScript manager. I like [ViolentMonkey](violentmonkey.github.io/)
 
-# [Click here to install](https://github.com/paradox460/Lemmy-Fast-Post-Userscript.git)
+# [Click here to install](https://github.com/paradox460/lemmy-fast-post-userscript/releases/latest/download/lemmy-fast-post.user.js)
 
 ## Configuration
 
