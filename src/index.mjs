@@ -1,3 +1,9 @@
+if (!GM_getValue('obsoleteAlert')) {
+  alert("The lemmy-fast-post userscript is not needed on lemmy instances running 0.18.1-rc.8 or higher.\nKeeping it enabled can lead to duplicate posts.\nThis alert will not be shown again.")
+  GM_setValue('obsoleteAlert', true);
+}
+
+
 const keydownHandler = ({ target, key, metaKey, ctrlKey }) => {
   if (key === 'Enter' && (metaKey || ctrlKey)) {
     const parentForm = target.closest('.markdown-textarea');

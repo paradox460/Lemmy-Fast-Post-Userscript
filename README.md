@@ -2,6 +2,8 @@
 
 Allows you to command/ctrl + enter within the text area to submit a comment.
 
+Note that if your home instance is running 0.18.1-rc.8 or higher, you don't need this script. Running it _can_ lead to duplicate posts being submitted.
+
 ## Installation
 
 You'll need a UserScript manager. I like [ViolentMonkey](violentmonkey.github.io/)
