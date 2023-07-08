@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Fast Post for Lemmy
 // @namespace    https://userscripts.pdx.su
-// @version      0.0.3
-// @description  Let you post a comment on lemmy by Ctrl/Cmd + Enter from the comment box.
+// @version      0.0.4
+// @description  Posting conveniences for Lemmy. On older UI versions, lets you post with ⌘+Enter, and can set a default language.
 // @author       Jeff Sandberg
 // @grant        GM_getValue
 // @grant        GM_setValue
